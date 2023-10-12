@@ -11,6 +11,11 @@ export const appRoutes: Route[] = [
       import('@irbweb/business-shell').then((m) => m.BusinessShellComponent),
   },
   {
+    path: 'user',
+    loadComponent: () =>
+      import('@irbweb/user-shell').then((m) => m.UserShellComponent),
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },

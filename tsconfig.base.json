@@ -31,11 +31,13 @@
       "@irbweb/contacts-shell": ["libs/web/business/contacts/shell/src/index.ts"],
       "@irbweb/teams-shell": ["libs/web/business/teams/shell/src/index.ts"],
       "@irbweb/projects-shell": ["libs/web/business/projects/shell/src/index.ts"],
+      "@irbweb/user-shell": ["libs/web/user/shell/src/index.ts"],
       "@irbweb/material": ["libs/web/shared/common/material/src/index.ts"],
       "@irbweb/tailwind": ["libs/web/shared/common/tailwind/src/index.ts"],
       "@irbweb/ui/business-layout": ["libs/web/shared/ui/layouts/business-layout/src/index.ts"],
       "@irbweb/ui/root-layout": ["libs/web/shared/ui/layouts/root-layout/src/index.ts"],
       "@irbweb/interceptors": ["libs/web/shared/utils/interceptors/src/index.ts"],
+
     }
   },
   "exclude": [
