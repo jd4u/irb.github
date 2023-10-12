@@ -6,9 +6,9 @@ console.info('app.routes loaded');
 export const appRoutes: Route[] = [
   { path: '', redirectTo: 'business', pathMatch: 'full' },
   {
-    path: 'business',
-    loadComponent: () =>
-      import('@irbweb/business-shell').then((m) => m.BusinessShellComponent),
+    path: 'business',    
+    loadChildren: () =>
+      import('@irbweb/business-shell').then((m) => m.businessShellRoutes),
   },
   {
     path: 'user',

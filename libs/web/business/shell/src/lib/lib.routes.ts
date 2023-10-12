@@ -5,7 +5,6 @@ export const businessShellRoutes: Route[] = [
   {
     path: '',
     component: BusinessShellComponent,
-    //redirectTo: 'contacts',
     children: [
       {
         path: 'contacts',
@@ -15,7 +14,7 @@ export const businessShellRoutes: Route[] = [
             (s) => s.contactsShellRoutes,
           );
         },
-        outlet: 'mybusiness',
+        outlet: 'b',
       },
       {
         path: 'projects',
@@ -25,7 +24,7 @@ export const businessShellRoutes: Route[] = [
             (s) => s.projectsShellRoutes,
           );
         },
-        outlet: 'mybusiness',
+        outlet: 'b',
       },
       {
         path: 'teams',
@@ -33,7 +32,7 @@ export const businessShellRoutes: Route[] = [
           console.log('loading teams route!');
           return import('@irbweb/teams-shell').then((s) => s.teamsShellRoutes);
         },
-        outlet: 'mybusiness',
+        outlet: 'b',
         pathMatch: 'prefix',
       },
     ],

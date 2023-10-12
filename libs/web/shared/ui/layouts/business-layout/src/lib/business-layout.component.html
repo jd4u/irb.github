@@ -6,11 +6,11 @@
     routerLinkActive
     #rla="routerLinkActive"
     [active]="rla.isActive"
-    [routerLink]="[{ outlets: { mybusiness: [link.link] } }]"
+    [routerLink]="[{ outlets: { b: [link.link] } }]"
   >
     {{ link.name }}
   </a>
 </nav>
 <mat-tab-nav-panel #myBusinessTabPanel>
-  <router-outlet name="mybusiness"></router-outlet>
+  <router-outlet name="b"></router-outlet>
 </mat-tab-nav-panel>

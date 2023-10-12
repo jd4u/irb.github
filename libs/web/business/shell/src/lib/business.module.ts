@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule  } from '@angular/platform-browser';
 
 import { RouterModule } from '@angular/router';
 import { businessShellRoutes } from './lib.routes';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [ BrowserModule, RouterModule.forChild(businessShellRoutes) ],
+  imports: [ CommonModule, RouterModule.forChild(businessShellRoutes) ],
   exports: [],
   declarations: [],
   providers: [],
