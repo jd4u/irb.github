@@ -1,0 +1,48 @@
+{
+  "workbench.colorTheme": "Default Light+",
+  "window.commandCenter": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.openRepositoryInParentFolders": "never",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.external.windowsExec": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.accessibilitySupport": "off",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.*.ts"
+  },
+  "explorer.fileNesting.enabled": true,
+  "githubPullRequests.pullBranch": "never",
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "editor.stickyScroll.enabled": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.autoReveal": "focusNoScroll",
+  "editor.rulers": [90]
+}

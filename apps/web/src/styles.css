@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: aliceblue;
+}
+
+.mat-mdc-snack-bar-container.snackbar-error .mdc-snackbar__surface {
+  background-color: rgb(179, 0, 0);
+}
+
+.mat-mdc-snack-bar-container.snackbar-error .mdc-snackbar__label {
+  color: white;
+}
+
+.mat-mdc-snack-bar-container.snackbar-success .mdc-snackbar__surface {
+  background-color: rgb(72, 156, 72);
+}
+
+.mat-mdc-snack-bar-container.snackbar-success .mdc-snackbar__label {
+  color: white;
+}
+
+.mat-mdc-snack-bar-container.snackbar-info .mdc-snackbar__surface {
+  background-color: rgb(250, 253, 198);
+}
+
+.mat-mdc-snack-bar-container.snackbar-info .mdc-snackbar__label {
+  color: rgb(54, 76, 173);
+}

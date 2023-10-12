@@ -1,0 +1,21 @@
+/*
+ * Remove template code below
+ */
+ :host {
+  display: block;
+  font-family: sans-serif;
+  min-width: 300px;
+  max-width: 1024px;
+  margin: 50px auto;
+  height:100%;
+}
+
+.gutter-left {
+  margin-left: 9px;
+}
+
+irbweb-root-layout {
+  background-color: white;
+  min-height: 100%;
+}
+

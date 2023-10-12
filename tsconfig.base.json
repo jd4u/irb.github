@@ -1,0 +1,60 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@irbweb/business-shell": ["libs/web/business/shell/src/index.ts"],
+      "@irbweb/contacts-shell": ["libs/web/business/contacts/shell/src/index.ts"],
+      "@irbweb/teams-shell": ["libs/web/business/teams/shell/src/index.ts"],
+      "@irbweb/projects-shell": ["libs/web/business/projects/shell/src/index.ts"],
+      "@irbweb/material": ["libs/web/shared/common/material/src/index.ts"],
+      "@irbweb/tailwind": ["libs/web/shared/common/tailwind/src/index.ts"],
+      "@irbweb/ui/business-layout": ["libs/web/shared/ui/layouts/business-layout/src/index.ts"],
+      "@irbweb/ui/root-layout": ["libs/web/shared/ui/layouts/root-layout/src/index.ts"],
+      "@irbweb/interceptors": ["libs/web/shared/utils/interceptors/src/index.ts"],
+    }
+  },
+  "exclude": [
+    "coverage/**/*",
+    "dist/**/*",
+    "node_modules",
+    "ref",
+    "db",
+    "docs",
+    "tmp",
+    "**/*.test.ts"
+  ],
+  "comments": {
+    "rootDir": ".",
+    "rootDirs": [
+      "{workspaceRoot}/apps/**/src",
+      "{workspaceRoot}/libs/**/src",
+      "apps/**/src",
+      "libs/**/src"
+    ]
+  }
+}

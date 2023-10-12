@@ -1,0 +1,52 @@
+{
+  "name": "shared-business-layout",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/web/shared/ui/layouts/business-layout/src",
+  "prefix": "irb",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/web/shared/ui/layouts/business-layout/ng-package.json",
+        "tailwindConfig": "libs/web/shared/ui/layouts/business-layout/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/web/shared/ui/layouts/business-layout/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/web/shared/ui/layouts/business-layout/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/web/shared/ui/layouts/business-layout/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/shared/ui/layouts/business-layout/**/*.ts",
+          "libs/web/shared/ui/layouts/business-layout/**/*.html",
+          "libs/web/shared/ui/layouts/business-layout/package.json"
+        ]
+      }
+    }
+  }
+}

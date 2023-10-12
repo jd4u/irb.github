@@ -1,0 +1,16 @@
+<p>business-layout works!</p>
+<nav mat-tab-nav-bar [tabPanel]="myBusinessTabPanel">
+  <a
+    mat-tab-link
+    *ngFor="let link of links; index as i"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [active]="rla.isActive"
+    [routerLink]="[{ outlets: { mybusiness: [link.link] } }]"
+  >
+    {{ link.name }}
+  </a>
+</nav>
+<mat-tab-nav-panel #myBusinessTabPanel>
+  <router-outlet name="mybusiness"></router-outlet>
+</mat-tab-nav-panel>

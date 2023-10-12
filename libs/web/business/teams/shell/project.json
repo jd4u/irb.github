@@ -1,0 +1,51 @@
+{
+  "name": "teams-shell",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/web/business/teams/shell/src",
+  "prefix": "irb",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/web/business/teams/shell/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/web/business/teams/shell/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/web/business/teams/shell/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/web/business/teams/shell/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/business/teams/shell/**/*.ts",
+          "libs/web/business/teams/shell/**/*.html",
+          "libs/web/business/teams/shell/package.json"
+        ]
+      }
+    }
+  }
+}
